@@ -3,12 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <title>Резюме — Дімбровський Ілля</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    #about { border-left: 6px solid #f59e0b; }
+    .highlight { background: #fef3c7; padding: 0 4px; border-radius: 4px; }
+  </style>
 </head>
 <body>
 
   <header>
     <h1>Дімбровський Ілля Андрійович</h1>
-    <p>Junior-спеціаліст з кібербезпеки (студент)</p>
+    <p style="margin: 0; font-style: italic;">Junior-спеціаліст з кібербезпеки (студент)</p>
   </header>
 
   <nav>
@@ -25,7 +31,7 @@
 
     <section id="about">
       <h2>Про себе</h2>
-      <p>Студент 2 курсу, цікавлюся кібербезпекою та веброзробкою. Самостійно вивчаю основи етичного хакінгу, регулярно проходжу задачі на навчальних платформах. Шукаю стажування, щоб здобути практичний досвід.</p>
+      <p>Студент 2 курсу, цікавлюся <span class="highlight">кібербезпекою</span> та веброзробкою. Самостійно вивчаю основи етичного хакінгу, регулярно проходжу задачі на навчальних платформах. Шукаю стажування, щоб здобути практичний досвід.</p>
     </section>
 
     <section id="education">
@@ -62,22 +68,27 @@
 
     <section id="skills">
       <h2>Навички</h2>
-
-      <h3>Технічні</h3>
-      <ul>
-        <li>Основи мереж (TCP/IP, DNS, HTTP)</li>
-        <li>Linux (командний рядок)</li>
-        <li>Python (базовий рівень)</li>
-        <li>HTML, Git</li>
-        <li>Wireshark, Nmap (початковий рівень)</li>
-      </ul>
-
-      <h3>Мови</h3>
-      <ul>
-        <li>Українська — рідна</li>
-        <li>Англійська — B1</li>
-      </ul>
+      <div class="skills-columns">
+        <div>
+          <h3>Технічні</h3>
+          <ul>
+            <li>Основи мереж (TCP/IP, DNS, HTTP)</li>
+            <li>Linux (командний рядок)</li>
+            <li>Python (базовий рівень)</li>
+            <li>HTML, Git</li>
+            <li>Wireshark, Nmap (початковий рівень)</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Мови</h3>
+          <ul>
+            <li>Українська — рідна</li>
+            <li>Англійська — B1</li>
+          </ul>
+        </div>
+      </div>
     </section>
+
 
   </main>
 
