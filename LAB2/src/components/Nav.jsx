@@ -1,16 +1,27 @@
+const links = [
+  { href: '#about', label: 'Про себе' },
+  { href: '#education', label: 'Освіта' },
+  { href: '#experience', label: 'Досвід' },
+  { href: '#skills', label: 'Навички' },
+  { href: '#contacts', label: 'Контакти' },
+];
 
 function Nav() {
-  const link =
-    "block rounded-md border-l-4 border-transparent px-4 py-2 transition hover:border-teal-600 hover:bg-teal-100";
-
   return (
-    <nav className="self-start rounded-xl border border-slate-300 bg-white p-3 shadow-md md:sticky md:top-5">
-      <ul className="flex flex-row flex-wrap gap-1 md:flex-col">
-        <li><a href="#about" className={link}>Про себе</a></li>
-        <li><a href="#education" className={link}>Освіта</a></li>
-        <li><a href="#experience" className={link}>Досвід</a></li>
-        <li><a href="#skills" className={link}>Навички</a></li>
-        <li><a href="#contacts" className={link}>Контакти</a></li>
+    <nav className="sticky top-0 z-20 border-y border-line bg-white px-5 py-1.5 md:px-10">
+      <ul className="-ml-3 flex flex-wrap gap-1">
+        {links.map((l, i) => (
+          <li key={l.href}>
+            <a
+              href={l.href}
+              className={`block rounded-lg px-3 py-2 hover:bg-mist-100 hover:text-ink ${
+                i === 0 ? 'font-semibold text-ink' : 'text-muted'
+              }`}
+            >
+              {l.label}
+            </a>
+          </li>
+        ))}
       </ul>
     </nav>
   );

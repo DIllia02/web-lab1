@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+/* Власні токени дизайну (Tailwind v4): з'являються як класи bg-sage-100, text-ink тощо */
+@theme {
+  --color-ink: #2b3440;
+  --color-muted: #667080;
+  --color-line: #dde3e8;
+  --color-page: #e9eef1;
+
+  --color-sage-100: #eaf2ec;
+  --color-sage-300: #cfe0d2;
+  --color-sage-500: #9dbfa6;
+
+  --color-mist-100: #eaf0f8;
+  --color-mist-300: #c5d5e8;
+  --color-mist-500: #9db8d9;
+  --color-mist-700: #3d5a80;
+
+  --color-peach-100: #fbeee7;
+  --color-peach-300: #f4d6c6;
+  --color-peach-500: #eab9a0;
+
+  --font-serif: Georgia, "Times New Roman", serif;
+}
